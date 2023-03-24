@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //nested function: function inside other functions.
+        // outer function have acess to inner function
+          
+        let userName="aarti";
+        let userInbox="0";
+
+
+        login();
+       function login(){
+        displayUserName();
+        displayUserInbox();
+       }
+       function displayUserName(){
+        console.log(`hi ${userName}`);
+       }
+       function displayUserInbox(){
+        console.log(`the value is ${userInbox}`);
+       }
+
+
+
+
+
+        </script>
+</body>
+</html>

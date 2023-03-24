@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      #demo{
+        width: 300px;
+        height: 200px;
+        border: 1px solid white;
+        background-color: beige;
+      }  
+    </style>
+   <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <h3>hi</h3>
+    </div>
+    <script>
+     var element=document.createElement("h2");
+     var element1=document.createTextNode("this is text");
+     var element2=document.createComment("this is just comment");
+     
+      element.appendChild(element1);
+
+      document.getElementById("demo").appendChild(element);
+      document.getElementById("demo").appendChild(element2);
+      console.log(element);
+
+      var target=document.getElementById("demo");
+      target.insertBefore(element,target.childNodes[0]);
+   
+      
+
+    </script>
+</body>
+</html>

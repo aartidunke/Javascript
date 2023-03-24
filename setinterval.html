@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //setinterval: invokes function repeatedly after a miliseconds
+      
+      let count=0;
+      let max=prompt("count up to what #?");
+      max=Number(max);
+
+      const timer=setInterval(countUp,1000); 
+
+      function countUp(){
+        count+=1;
+        console.log(count);
+        if(count>=max){
+        clearInterval(timer);
+        }
+      }
+
+        </script>
+</body>
+</html>

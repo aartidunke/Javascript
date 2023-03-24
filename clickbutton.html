@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="a1">hello we are here</h1>
+<p id="a2">hi</p>
+<p id="demo"></p>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<button id="bt1">click to display date</button>
+<button id="bt2">click</button>
+<button id="bt3">click</button>
+<button id="bt4">click</button>
+<button id="bt5" onclick="fun1()">click</button>
+
+
+
+
+
+<script>
+  document.getElementById("bt1").onclick=function(){
+      document.getElementById("demo").innerHTML=Date();
+  }
+  document.getElementById("bt2").onclick=function(){
+    document.getElementById("a1").innerHTML="hi aarti";
+  }
+  document.getElementById("bt3").onclick=function(){
+    document.getElementById("a1").style.fontSize="70px";
+  }
+  document.getElementById("bt4").onclick=function(){
+    document.getElementById("a2").style.display='none';
+  }
+ 
+function fun1(){
+  document.getElementById("demo2").innerHTML="hey";
+}
+  
+
+
+
+
+</script>
+
+</body>
+</html>

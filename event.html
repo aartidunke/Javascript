@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="Name">Name</label>
+            <input type="text" id="fname" onfocus="focusFunction(this)" 
+            onblur="blurFunction(this)" oninput="inputfun(this)"><br><br>
+
+        <label for="class">class</label>
+        <input type="text" id="" onfocus="focusFunction(this)" 
+        onblur="blurFunction(this)"><br><br>
+
+        <select id="" onfocus="focusFunction(this)" 
+        onblur="blurFunction(this)">
+            <option value="">India</option>
+            <option value="">Nepal</option>
+            </select>
+            <br>
+        </form>
+
+
+        <div id="test" style="border:1px solid red;"></div>
+    <script>
+
+          function focusFunction(element){
+            element.style.background="yellow";
+          }
+          function blurFunction(element){
+            element.style.background="";
+          }
+
+        function inputfun(element){
+         var x= element.value;
+         document.getElementById("test").innerHTML=x;
+        }
+
+
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+
+    <body>
+        <p id="demo"></p>
+        <p id="demo2">hi aarti</p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo6"></p>
+        <p id="p1">hi</p>
+        <p id="a1"></p>
+        <button id="bt1" onclick="fun1()">click</button>
+        <button id="bt2" onclick="fun2()">uppercase</button>
+           <script>
+           /* //length
+            let text="aarti";
+            document.getElementById("demo").innerHTML=text.length;*/
+
+           /* //slice
+            let text1="mango, apple, banana";
+          //  let part=text1.slice(7,12);
+         //   let part=text1.slice(7);
+        //    let part=text1.slice(-6);
+        //    let part=text1.slice(-13,-1);
+            document.getElementById("demo").innerHTML=part; */
+
+          /*  // substring
+            let text1="mango, apple, banana";
+            let part=text1.substring(7);
+            document.getElementById("demo").innerHTML=part; */
+
+          /*  //substr
+            let str="mango, apple, banana";
+            document.getElementById("demo").innerHTML=str.substr(7,5); */
+
+            /*//replace
+            function fun1(){
+            let text=document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML=text.replace("aarti","neha");
+
+            }*/
+            
+            /* toUpperCase()
+             function fun2(){
+                let txt=document.getElementById("p1").innerHTML;
+                document.getElementById("p1").innerHTML=txt.toUpperCase();
+
+             } */
+            
+            /* //trim
+             let txt1=" hello ";
+             let txt2="neha"
+             document.getElementById("demo3").innerHTML=txt1.concat("   " , txt2);
+             */
+                   
+             /* 
+              let text1 = "     Hello World!     ";
+             let text2 = text1.trim();
+             document.getElementById("demo4").innerHTML =
+            "Length text1 = " + text1.length + "<br>Length text2 = " + 
+             text2.length;  */
+              
+            /*
+            //charAt()
+             var text = "HELLO WORLD";
+             document.getElementById("a1").innerHTML = text.charAt(0); */
+
+            /* //split
+            let txt="a,b,c,d";
+            const myArray=txt.split(",");
+           // document.getElementById("a1").innerHTML=myArray[0];
+
+            let str="hello!world";
+            const myArray1=str.split("!");
+            document.getElementById("a1").innerHTML=myArray1[0];  */
+
+          let str="hello";
+          const myArray=str.split("");
+          str="";
+          for(i=0;i<myArray.length;i++){
+            str+=myArray[i]+"<br>";
+          }
+          document.getElementById("demo6").innerHTML=str;
+
+
+             
+            </script>
+        </body>
+        </html>

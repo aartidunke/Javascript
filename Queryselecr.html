@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="a1" style="background-color: aqua; color: blue;">
+        <h3>hello</h3>
+        </div>
+    <p>this id p1</p>
+    <p>this is p2</p>
+    <p>this is p3</p>
+    <button type="button" onclick="fun()">click</button>
+    <script>
+    
+    function fun(){
+    
+     /* var x=document.querySelector("p");
+        x.style.backgroundColor="yellow"; */
+
+        var arr=document.querySelectorAll("p");
+        for(i=0;i<arr.length;i++){
+            arr[i].style.fontSize="30px";
+        }
+
+     }
+
+        var element;
+       // var element=document.querySelector("#a1").style.backgroundColor="pink";
+        var element=document.querySelector("#a1").style.color="orange";
+        console.log(element);
+
+
+
+
+
+
+      
+
+        </script>
+</body>
+</html>

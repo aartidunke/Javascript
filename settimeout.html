@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="bt1">Buy</button>
+   <script>
+    //settimeout: invokes function after a number of miliseconds
+    
+     let item="crypto";
+     let price=33.23;
+     
+     let timer1=setTimeout(firstmsg,3000,item,price);
+     let timer2= setTimeout(msg2,3000); 
+     let timer3= setTimeout(msg3,3000); 
+    
+    function firstmsg(item,price){
+        alert(`buy this ${item} for ${price} `);
+    } 
+    function msg2(){
+        alert(`hello`);
+    }
+    function msg3(){
+        alert(`do it later`);
+    }
+
+    document.getElementById("bt1").onclick=function(){
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        clearTimeout(timer3);
+        alert(`thanks for buying <3`);
+    }
+
+   </script> 
+</body>
+</html>

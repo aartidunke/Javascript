@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <label id="label1"></label>
+    <script>
+        //callback: function passed as an argument to another function
+       
+        sum(2,3,displayConsole);
+         
+        function sum(x,y,myfun){
+          let result=x+y;
+          myfun(result);
+        }
+
+        function displayConsole(output){
+         console.log(output)
+        }
+        function displayDOM(output){
+            document.getElementById("label1").innerHTML=output;
+        }
+    
+        </script>
+</body>
+</html>
